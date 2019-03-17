@@ -4,7 +4,7 @@ workflow "ping" {
 }
 
 action "ping action" {
-  uses = "docker://alpine"
+  uses = "docker://byrnedo/alpine-curl"
   runs = ["./ping.sh"]
   secrets = [
     "GITHUB_TOKEN"
